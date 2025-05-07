@@ -26,7 +26,9 @@ export default function Home() {
               <Image
                 alt=""
                 src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-8 w-auto"
+                width={32} // equivalent to Tailwind's h-8 (8 * 4 = 32px)
+                height={32}
+                className="w-auto"
               />
             </a>
           </div>
@@ -62,7 +64,9 @@ export default function Home() {
                 <Image
                   alt=""
                   src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
+                  className="w-auto"
+                  width={32} // equivalent to Tailwind's h-8 (8 * 4 = 32px)
+                  height={32}
                 />
               </a>
               <button
