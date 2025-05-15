@@ -3,6 +3,7 @@ import './globals.css';
 import { ReactNode } from 'react';
 import { Inter } from 'next/font/google';
 import LayoutWrapper from './components/LayoutWrapper'; // 👈 use client wrapper
+import { ToastContainer } from 'react-toastify';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className={inter.className}>
         <LayoutWrapper>{children}</LayoutWrapper>
+        <ToastContainer />
       </body>
     </html>
   );

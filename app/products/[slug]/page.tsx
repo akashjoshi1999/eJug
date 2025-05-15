@@ -1,3 +1,5 @@
+'use client';
+
 // app/products/[slug]/page.tsx
 import Image from 'next/image';
 import { use } from 'react';
@@ -22,7 +24,7 @@ export default function ProductPage({ params }: ProductPageProps) {
     name: `Product ${slug}`,
     description: 'This is a detailed description of the product.',
     price: 29.99,
-    imageUrl: `/images/product-${slug}.jpg`,
+    imageUrl: `/images/jug_${slug}.jpg`,
   };
 
   return (
@@ -36,11 +38,11 @@ export default function ProductPage({ params }: ProductPageProps) {
           height={512}
         />
         <div className="lg:ml-8">
-          <h1 className="text-3xl font-semibold mb-4">{product.name}</h1>
+          <h1 className="text-3xl font-bold mb-4 text-black">{product.name}</h1>
           <p className="text-lg text-gray-600 mb-4">{product.description}</p>
           <p className="text-xl font-bold text-blue-600">${product.price.toFixed(2)}</p>
-          <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">
-            Add to Cart
+          <button className="mt-6 px-6 py-2 bg-yellow-500 text-white rounded-full hover:bg-yellow-700">
+            Buy
           </button>
         </div>
       </div>
